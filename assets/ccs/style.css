@@ -4,17 +4,22 @@
   }
 
 
-  /*color changes for background*/
-.neutral{
+    /*color changes for background*/
+body{
+    padding: 0;
     margin: 0;
+    display: flex;
+    width: 100vw;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to left, #273991, #a1399a,
     #b47948, #bf4444, #7b1064);
     background-size: 400% 400%;
     animation: bg 15s ease infinite;
 }
 
-.wrong{
+body.wrong{
     margin: 0;
     height: 100vh;
     background: linear-gradient(to left, #916327, #a03e26,
@@ -23,7 +28,7 @@
     animation: bg 15s ease infinite;
 }
 
-.correct{
+body.correct{
     margin: 0;
     height: 100vh;
     background: linear-gradient(to left, #ccec1c, #85b728,
@@ -45,7 +50,26 @@
 }
 
 body{
-    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #273991, #a1399a,
+    #b47948, #bf4444, #7b1064);
+    background-size: 400% 400%;
+    animation: bg 15s ease infinite;
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow:0 0 10px 2px
 }
   
 
