@@ -1,8 +1,33 @@
-body{ 
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded;
+  }
+
+
+  /*color changes for background*/
+.neutral{
     margin: 0;
     height: 100vh;
     background: linear-gradient(to left, #273991, #a1399a,
     #b47948, #bf4444, #7b1064);
+    background-size: 400% 400%;
+    animation: bg 15s ease infinite;
+}
+
+.wrong{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #916327, #a03e26,
+    #a82720);
+    background-size: 400% 400%;
+    animation: bg 15s ease infinite;
+}
+
+.correct{
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to left, #ccec1c, #85b728,
+    #128e2b);
     background-size: 400% 400%;
     animation: bg 15s ease infinite;
 }
@@ -19,4 +44,10 @@ body{
     }
 }
 
+body{
+    
+}
+  
+
+  
 
