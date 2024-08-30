@@ -49,22 +49,7 @@ body.correct{
     }
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to left, #273991, #a1399a,
-    #b47948, #bf4444, #7b1064);
-    background-size: 400% 400%;
-    animation: bg 15s ease infinite;
-}
-
 .container{
-    
     width: 800px;
     max-width: 80%;
     background-color: white;
@@ -73,14 +58,6 @@ body{
     box-shadow:0 0 10px 2px
 }
 
-.btn {
-    border: 1px solid hsl(var(--hue), 100%, 30%);
-    background-color: hsl(var(--hue), 100%, 50%);
-    border-radius: 5px;
-    padding: 5px 10px;
-    color: white;
-    outline: none;
-  }
 
 .btn-grid{
     display: grid;
@@ -89,10 +66,22 @@ body{
     gap: 8px;
 }
 
+.start-btn, .next-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 10px;
+    gap: 5px;
+  }
+
+ .btn:hover {
+    color: #bf4444;
+  }
+
 .controls{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
 }
   
 
