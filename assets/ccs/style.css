@@ -3,7 +3,6 @@
     font-family: Gotham Rounded;
   }
 
-
     /*color changes for background*/
 body{
     padding: 0;
@@ -55,10 +54,11 @@ body.correct{
     background-color: white;
     border-radius: 5px;
     padding: 10px;
-    box-shadow:0 0 10px 2px
+    box-shadow:0 0 10px 4px;
 }
 
 
+/*btn styling */
 .btn-grid{
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -66,24 +66,44 @@ body.correct{
     gap: 8px;
 }
 
-.start-btn, .next-btn {
+.btn{
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.start-btn, .next-btn{
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 10px;
     gap: 5px;
-  }
+    border-radius: 5px;
+}
 
- .btn:hover {
+.btn:hover {
     color: #bf4444;
-  }
+}
 
+.btn.correct {
+    background-color: #128e2b;
+    color: black;
+}
+  
+.btn.wrong {
+    background-color: red;
+    color: black;
+}
+  
 .controls{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
   
-
+.hide {
+    display: none;
+  }
   
 
