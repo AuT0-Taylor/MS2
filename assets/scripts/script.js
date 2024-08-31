@@ -1,13 +1,14 @@
+//constants
 const startBtn = document.getElementById('start-btn')
 const questionContainer = document.getElementById('question-box')
 
-startBtn.addEventListener('click', startGame)
 
 function startGame() {
-    console.log("start")
+    questionCounter = 0;
+    score = 0;
+    availableQuesions = [...questions];
     startBtn.classList.add('hide')
     questionContainer.classList.remove('hide')
-
 }
 
 function nextQuestion() {
@@ -18,6 +19,7 @@ function selectAnswer() {
 
 }
 
+/* questions */
 let questions = [
     {
         question: "?",
@@ -44,6 +46,3 @@ let questions = [
         answer: ,
     },
 ];
-
-const Correct_Point = 5;
-const Max_Question = 5;
