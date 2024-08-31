@@ -67,7 +67,7 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-choices.forEach( (choice) => {
+choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {
         if (!acceptingAnswers) return;
 
@@ -75,7 +75,7 @@ choices.forEach( (choice) => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
         getNewQuestion();
-    } );
-} );
+    });
+});
 
 startGame();
