@@ -23,7 +23,7 @@ let questions = [
         choice2: "",
         choice3: "",
         choice4: "",
-        answer: ,
+        answer: 1,
     },
     {
         question: "?",
@@ -31,7 +31,7 @@ let questions = [
         choice2: "",
         choice3: "",
         choice4: "",
-        answer: ,
+        answer: 1,
     },
 ];
 
