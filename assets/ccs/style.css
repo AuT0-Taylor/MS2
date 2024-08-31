@@ -71,14 +71,7 @@ body.correct{
     padding: 5px 10px;
     color: black;
     outline: none;
-}
-
-.start-btn, .next-btn{
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px 10px;
-    gap: 5px;
-    border-radius: 5px;
+    text-align: center;
 }
 
 .btn:hover {
