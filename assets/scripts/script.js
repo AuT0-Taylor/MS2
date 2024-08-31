@@ -3,31 +3,19 @@ const startBtn = document.getElementById('start-btn')
 const questionContainer = document.getElementById('question-box')
 
 
-function startGame() {
-    questionCounter = 0;
-    score = 0;
-    availableQuesions = [...questions];
-    startBtn.classList.add('hide')
-    questionContainer.classList.remove('hide')
-}
+const Correct_Point = 5;
+const Max_Question = 5;
 
-function nextQuestion() {
-
-}
-
-function selectAnswer() {
-
-}
 
 /* questions */
 let questions = [
     {
-        question: "?",
-        choice1: "",
-        choice2: "",
-        choice3: "",
-        choice4: "",
-        answer: ,
+        question: "whats effective against water?",
+        choice1: "grass",
+        choice2: "fire",
+        choice3: "steel",
+        choice4: "bug",
+        answer: 1,
     },
     {
         question: "?",
@@ -46,3 +34,23 @@ let questions = [
         answer: ,
     },
 ];
+
+/* starts game function
+- hide start btn
+- intiates quiz with array question */
+function startGame() {
+    questionCounter = 0;
+    score = 0;
+    availableQuesions = [...questions];
+    nextQuestion();
+    startBtn.classList.add('hide')
+    questionContainer.classList.remove('hide')
+}
+
+function nextQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
